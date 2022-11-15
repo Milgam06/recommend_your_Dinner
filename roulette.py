@@ -22,9 +22,11 @@ def chDinner():     # 메뉴추첨 함수
     global menus
     sleep(1)
     print("\n당신이 고른 후보들 중 하나를 추첨해 드릴게요!")
-    for f in range(4):
-        sleep(0.5)
-        print(".", end="")
+    for f in range(100):
+        print(random.choice(menus))
+        sleep(f*(1/1000))
+        if f == 90:
+            sleep(f*(1/500))
     result = random.choice(menus)
     print(f"\n{result}'가 나왔네요! 5초 뒤에 배달사이트 열어드릴게요!")
     sleep(5)
