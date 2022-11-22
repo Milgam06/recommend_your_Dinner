@@ -5,7 +5,6 @@ import platform
 from time import sleep   
 
 
-
 menu = ""
 menus = []
 
